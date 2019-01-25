@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
@@ -14,8 +15,6 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        toastTxt = toastTxt.GetComponent(typeof(Text)) as Text;
-
         lastBackPressTime = Time.deltaTime;
     }
 

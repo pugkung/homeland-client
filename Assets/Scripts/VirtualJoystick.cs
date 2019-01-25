@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -31,7 +33,6 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
                                                                     e.position,
                                                                     e.pressEventCamera,
                                                                     out pos)) {
-            Debug.Log(pos);
             pos.x = ((pos.x - ImgBg.rectTransform.position.x) / ImgBg.rectTransform.sizeDelta.x);
             pos.y = ((pos.y + ImgBg.rectTransform.position.y) / ImgBg.rectTransform.sizeDelta.y);
 
